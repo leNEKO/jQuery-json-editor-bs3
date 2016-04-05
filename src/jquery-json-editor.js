@@ -577,7 +577,7 @@
         "regexp": def_group,
         "array": $("<div class='col-xs-12 json-spacer'>").append($("<div class='json-label'>")),
         "object": $("<div class='col-xs-12 json-spacer'>").append($("<div class='json-label'>")),
-        "date": def_group
+        "date": $("<div class='form-group form-group-sm datepick'>").append($("<div class='json-label'>"))
     };
 
     // Default label elements
