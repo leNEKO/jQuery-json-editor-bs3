@@ -599,7 +599,7 @@
         "boolean": $("<input type='checkbox'>", {type: "checkbox"}),
         "string": $(def_input, {type: "text"}),
         "regexp": $(def_input, {type: "text"}),
-        "date": $('<input class="form-control" data-provide="datepicker" data-date-language="EN-en" place-holder="YYYY-MM-DD" data-date-format="yyyy-mm-dd" data-date-today-highlight="true">', {type: "text"}),
+        "date": $('<input class="form-control datepicker" data-provide="datepicker" data-date-language="EN-en" place-holder="YYYY-MM-DD" data-date-format="yyyy-mm-dd" data-date-today-highlight="true">', {type: "text"}),
         "array": $(def_input, {type: "text"}),
     };
 })($);
