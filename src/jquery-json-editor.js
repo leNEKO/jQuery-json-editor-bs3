@@ -399,7 +399,8 @@
                 }
             }
             $group.find(".json-label").append(
-                $("<div>").append($input));
+                $("<div>").append($input)
+            );
             return $group;
         };
 
@@ -572,7 +573,7 @@
     var  def_group = $("<div class='form-group form-group-sm'>").append($("<div class='json-label input-group'>"));
     JsonEdit.groups = {
         "number": def_group,
-        "boolean": $("<div class='form-group form-group-xs'>").append($("<div class='json-label input-group'>")),
+        "boolean": $("<div class='form-group form-group-xs'>").append($("<div class='json-label input-group checkbox-container'>")),
         "string": def_group,
         "regexp": def_group,
         "array": $("<div class='col-xs-12 json-spacer'>").append($("<div class='json-label'>")),
@@ -596,7 +597,7 @@
     var def_input = "<input class='form-control'>";
     JsonEdit.inputs = {
         "number": $(def_input, {type: "number"}),
-        "boolean": $("<input type='checkbox'>", {type: "checkbox"}),
+        "boolean": $("<input class='checkbox' type='checkbox'>", {type: "checkbox"}),
         "string": $(def_input, {type: "text"}),
         "regexp": $(def_input, {type: "text"}),
         "date": $('<input class="form-control datepicker" data-provide="datepicker" data-date-language="EN-en" place-holder="YYYY-MM-DD" data-date-format="yyyy-mm-dd" data-date-today-highlight="true">', {type: "text"}),
