@@ -399,7 +399,7 @@
                 }
             }
             $group.find(".json-label").append(
-                $("<div class='col-sm-12'>").append($input));
+                $("<div>").append($input));
             return $group;
         };
 
@@ -569,19 +569,19 @@
     };
 
     // Default group elements
-    var  def_group = $("<div class='form-group form-group-sm'>").append($("<div class='json-label'>"));
+    var  def_group = $("<div class='form-group form-group-sm'>").append($("<div class='json-label input-group'>"));
     JsonEdit.groups = {
         "number": def_group,
-        "boolean": $("<div class='form-group form-group-sm'>").append($("<div class='json-label'>")),
+        "boolean": $("<div class='form-group form-group-xs'>").append($("<div class='json-label input-group'>")),
         "string": def_group,
         "regexp": def_group,
         "array": $("<div class='col-xs-12 json-spacer'>").append($("<div class='json-label'>")),
         "object": $("<div class='col-xs-12 json-spacer'>").append($("<div class='json-label'>")),
-        "date": $("<div class='form-group form-group-sm datepick'>").append($("<div class='json-label'>"))
+        "date": $("<div class='form-group form-group-sm datepick'>").append($("<div class='json-label input-group'>"))
     };
 
     // Default label elements
-    var def_label = $('<span class="col-sm-12">');
+    var def_label = $('<span class="input-group-addon">');
     JsonEdit.labels = {
         "number": def_label,
         "boolean": def_label,
